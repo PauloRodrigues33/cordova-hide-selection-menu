@@ -2,82 +2,80 @@
   "_args": [
     [
       {
-        "raw": "https://github.com/WBlackstorm/cordova-hide-native-selection-menu",
+        "raw": "https://github.com/PauloRodrigues33/cordova-hide-selection-menu",
         "scope": null,
         "escapedName": null,
         "name": null,
-        "rawSpec": "https://github.com/WBlackstorm/cordova-hide-native-selection-menu",
-        "spec": "git+https://github.com/WBlackstorm/cordova-hide-native-selection-menu.git",
+        "rawSpec": "https://github.com/PauloRodrigues33/cordova-hide-selection-menu",
+        "spec": "git+https://github.com/PauloRodrigues33/cordova-hide-selection-menu.git",
         "type": "hosted",
         "hosted": {
           "type": "github",
-          "ssh": "git@github.com:WBlackstorm/cordova-hide-native-selection-menu.git",
-          "sshUrl": "git+ssh://git@github.com/WBlackstorm/cordova-hide-native-selection-menu.git",
-          "httpsUrl": "git+https://github.com/WBlackstorm/cordova-hide-native-selection-menu.git",
-          "gitUrl": "git://github.com/WBlackstorm/cordova-hide-native-selection-menu.git",
-          "shortcut": "github:WBlackstorm/cordova-hide-native-selection-menu",
-          "directUrl": "https://raw.githubusercontent.com/WBlackstorm/cordova-hide-native-selection-menu/master/package.json"
+          "ssh": "git@github.com:PauloRodrigues33/cordova-hide-selection-menu.git",
+          "sshUrl": "git+ssh://git@github.com/PauloRodrigues33/cordova-hide-selection-menu.git",
+          "httpsUrl": "git+https://github.com/PauloRodrigues33/cordova-hide-selection-menu.git",
+          "gitUrl": "git://github.com/PauloRodrigues33/cordova-hide-selection-menu.git",
+          "shortcut": "github:PauloRodrigues33/cordova-hide-selection-menu",
+          "directUrl": "https://raw.githubusercontent.com/PauloRodrigues33/cordova-hide-selection-menu/master/package.json"
         }
       },
       "C:\\Users\\amoraes\\Desktop\\MSCROSS\\medsoft-pro-ionic"
     ]
   ],
-  "_from": "git+https://github.com/WBlackstorm/cordova-hide-native-selection-menu.git",
-  "_id": "cordova-hide-native-selection-menu@0.2.4",
+  "_from": "git+https://github.com/PauloRodrigues33/cordova-hide-selection-menu.git",
+  "_id": "cordova-hide-selection-menu@0.0.1",
   "_inCache": true,
-  "_location": "/cordova-hide-native-selection-menu",
+  "_location": "/cordova-hide-selection-menu",
   "_phantomChildren": {},
   "_requested": {
-    "raw": "https://github.com/WBlackstorm/cordova-hide-native-selection-menu",
+    "raw": "https://github.com/PauloRodrigues33/cordova-hide-selection-menu",
     "scope": null,
     "escapedName": null,
     "name": null,
-    "rawSpec": "https://github.com/WBlackstorm/cordova-hide-native-selection-menu",
-    "spec": "git+https://github.com/WBlackstorm/cordova-hide-native-selection-menu.git",
+    "rawSpec": "https://github.com/PauloRodrigues33/cordova-hide-selection-menu",
+    "spec": "git+https://github.com/PauloRodrigues33/cordova-hide-selection-menu.git",
     "type": "hosted",
     "hosted": {
       "type": "github",
-      "ssh": "git@github.com:WBlackstorm/cordova-hide-native-selection-menu.git",
-      "sshUrl": "git+ssh://git@github.com/WBlackstorm/cordova-hide-native-selection-menu.git",
-      "httpsUrl": "git+https://github.com/WBlackstorm/cordova-hide-native-selection-menu.git",
-      "gitUrl": "git://github.com/WBlackstorm/cordova-hide-native-selection-menu.git",
-      "shortcut": "github:WBlackstorm/cordova-hide-native-selection-menu",
-      "directUrl": "https://raw.githubusercontent.com/WBlackstorm/cordova-hide-native-selection-menu/master/package.json"
+      "ssh": "git@github.com:PauloRodrigues33/cordova-hide-selection-menu.git",
+      "sshUrl": "git+ssh://git@github.com/PauloRodrigues33/cordova-hide-selection-menu.git",
+      "httpsUrl": "git+https://github.com/PauloRodrigues33/cordova-hide-selection-menu.git",
+      "gitUrl": "git://github.com/PauloRodrigues33/cordova-hide-selection-menu.git",
+      "shortcut": "github:PauloRodrigues33/cordova-hide-selection-menu",
+      "directUrl": "https://raw.githubusercontent.com/PauloRodrigues33/cordova-hide-selection-menu/master/package.json"
     }
   },
   "_requiredBy": [
     "#USER",
     "/"
   ],
-  "_resolved": "git+https://github.com/WBlackstorm/cordova-hide-native-selection-menu.git#c197e76b49bf2c70a2b3ed30066b15ba877e574e",
+  "_resolved": "git+https://github.com/PauloRodrigues33/cordova-hide-selection-menu.git#c197e76b49bf2c70a2b3ed30066b15ba877e574e",
   "_shasum": "ecbcaab3edbb002b9379d35e0d6cae547cd4dc87",
   "_shrinkwrap": null,
-  "_spec": "https://github.com/WBlackstorm/cordova-hide-native-selection-menu",
+  "_spec": "https://github.com/PauloRodrigues33/cordova-hide-selection-menu",
   "_where": "C:\\Users\\amoraes\\Desktop\\MSCROSS\\medsoft-pro-ionic",
   "author": {
     "name": "Weverton Peron"
   },
   "bugs": {
-    "url": "https://github.com/WBlackstorm/cordova-hide-native-selection-menu/issues"
+    "url": "https://github.com/PauloRodrigues33/cordova-hide-selection-menu/issues"
   },
   "cordova": {
-    "id": "com.wstorm.selectionplugin",
+    "id": "com.prodrigues.selectionplugin",
     "platforms": [
       "android",
       "ios"
     ]
   },
   "dependencies": {},
-  "description": "Cordova plugin to hide native selection menu",
+  "description": "Cordova plugin for disable selection menu",
   "devDependencies": {},
-  "engines": [
-    {
-      "name": "cordova",
-      "version": ">=3.4.0"
-    }
-  ],
+  "engines": {
+    "name": "cordova",
+    "version": ">=3.4.0"
+  },
   "gitHead": "c197e76b49bf2c70a2b3ed30066b15ba877e574e",
-  "homepage": "https://github.com/WBlackstorm/cordova-hide-native-selection-menu#readme",
+  "homepage": "https://github.com/PauloRodrigues33/cordova-hide-selection-menu#readme",
   "keywords": [
     "cordova",
     "device",
@@ -86,13 +84,13 @@
     "cordova-ios"
   ],
   "license": "Apache 2.0",
-  "name": "cordova-hide-native-selection-menu",
+  "name": "cordova-hide-selection-menu",
   "optionalDependencies": {},
   "readme": "# cordova-hide-native-selection-menu\r\nPlugin that allows hide selection menu of native platform in cordova apps\r\n",
   "readmeFilename": "README.md",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/WBlackstorm/cordova-hide-native-selection-menu.git"
+    "url": "git+https://github.com/PauloRodrigues33/cordova-hide-selection-menu.git"
   },
-  "version": "0.2.4"
+  "version": "0.0.1"
 }
