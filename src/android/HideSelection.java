@@ -30,23 +30,21 @@ public class HideSelection extends CordovaPlugin {
 
     @Override
     public boolean execute(String action, JSONArray data, CallbackContext callbackContext) throws JSONException {
-
         try {
-            switch (action) {
-            case "hideMenu":
+            if (action == "hideMenu") {
                 webViewObject.getView().setLongClickable(false);
                 webViewObject.getView().setHapticFeedbackEnabled(false);
                 callbackContext.success("Sucesso, n�o clicavel.");
-                break;
-            case "showMenu":
-                webViewObject.getView().setLongClickable(true);
-                webViewObject.getView().setHapticFeedbackEnabled(true);                
-                callbackContext.success("Sucesso, clicavel.");
-                break;
-            default:
-                callbackContext.error("Erro, comando n�o encontrado.");
-                break;
+                return true;
             }
+            if (action == "showMenu") {
+                webViewObject.getView().setLongClickable(true);
+                webViewObject.getView().setHapticFeedbackEnabled(true);
+                callbackContext.success("Sucesso, clicavel.");
+                return true;
+            }
+            callbackContext.error("Erro, comando n�o encontrado.");
+
         } catch (Exception e) {
             callbackContext.error(e.getMessage());
         }
