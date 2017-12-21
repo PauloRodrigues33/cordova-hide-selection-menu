@@ -44,6 +44,7 @@ public class HideSelection extends CordovaPlugin {
                 return true;
             }
             callbackContext.error("Erro, comando n�o encontrado.");
+            return true;
 
         } catch (Exception e) {
             callbackContext.error(e.getMessage());
