@@ -1,4 +1,4 @@
-package com.wstorm.selectionplugin;
+package com.prodrigues.disableselection;
 
 import org.apache.cordova.*;
 import org.json.JSONArray;
