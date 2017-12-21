@@ -20,39 +20,35 @@ public class HideSelection extends CordovaPlugin {
 
     @Override
     public void initialize(CordovaInterface cordova, CordovaWebView webView) {
-      Log.i("Teste", "Passou initialize");
+        Log.i("Teste", "Passou initialize");
 
-      super.initialize(cordova, webView);
+        super.initialize(cordova, webView);
 
-      this.webViewObject = webView;
-      this.activity = cordova.getActivity();
-
+        this.webViewObject = webView;
+        this.activity = cordova.getActivity();
     }
 
     @Override
     public boolean execute(String action, JSONArray data, CallbackContext callbackContext) throws JSONException {
 
-        if (action.equals("hideMenu")) {
-
-            this.activity.runOnUiThread(new Runnable() {
-                @Override
-                public void run() {
-
-                  webViewObject.getView().setLongClickable(false);
-                  activity.unregisterForContextMenu(webViewObject.getView());
-
-
-                }
-            });
-
-            callbackContext.success("Sucesso");
-
-            return false;
-
-        } else {
-            callbackContext.error("Erro");
-            return false;
-
+        try {
+            switch (action) {
+            case "hideMenu":
+                webViewObject.setLongClickable(false);
+                webViewObject.setHapticFeedbackEnabled(false);
+                callbackContext.success("Sucesso, não clicavel.");
+                break;
+            case "showMenu":
+                webViewObject.setLongClickable(true);
+                webViewObject.setHapticFeedbackEnabled(true);                
+                callbackContext.success("Sucesso, clicavel.");
+                break;
+            default:
+                callbackContext.error("Erro, comando não encontrado.");
+                break;
+            }
+        } catch (Exception e) {
+            callbackContext.error(e.getMessage());
         }
     }
 
