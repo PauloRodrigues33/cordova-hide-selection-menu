@@ -48,6 +48,7 @@ public class HideSelection extends CordovaPlugin {
 
         } catch (Exception e) {
             callbackContext.error(e.getMessage());
+            return true;
         }
     }
 
