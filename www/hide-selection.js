@@ -1,5 +1,8 @@
 module.exports = {
-    text_selection: function (successCallback, errorCallback) {      
+    disableContextMenu: function (successCallback, errorCallback) {      
         cordova.exec(successCallback, errorCallback, "HideSelection", "hideMenu", []);
+    },
+    enableContextMenu: function (successCallback, errorCallback) {      
+        cordova.exec(successCallback, errorCallback, "HideSelection", "showMenu", []);
     }
 };

@@ -34,17 +34,17 @@ public class HideSelection extends CordovaPlugin {
         try {
             switch (action) {
             case "hideMenu":
-                webViewObject.setLongClickable(false);
-                webViewObject.setHapticFeedbackEnabled(false);
-                callbackContext.success("Sucesso, não clicavel.");
+                webViewObject.getView().setLongClickable(false);
+                webViewObject.getView().setHapticFeedbackEnabled(false);
+                callbackContext.success("Sucesso, nï¿½o clicavel.");
                 break;
             case "showMenu":
-                webViewObject.setLongClickable(true);
-                webViewObject.setHapticFeedbackEnabled(true);                
+                webViewObject.getView().setLongClickable(true);
+                webViewObject.getView().setHapticFeedbackEnabled(true);                
                 callbackContext.success("Sucesso, clicavel.");
                 break;
             default:
-                callbackContext.error("Erro, comando não encontrado.");
+                callbackContext.error("Erro, comando nï¿½o encontrado.");
                 break;
             }
         } catch (Exception e) {
